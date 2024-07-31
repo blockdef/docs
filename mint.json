@@ -53,8 +53,9 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "development",
+        "support",
+        "governance-foundation"
       ]
     },
     {

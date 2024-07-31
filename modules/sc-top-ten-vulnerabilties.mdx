@@ -1,88 +1,108 @@
 ---
 title: 'Smart Contract Top Ten Vulnerabilities'
-description: 'Text, title, and styling in standard markdown'
+description: ''
 icon: 'terminal'
 ---
 
-## Titles
+In BLOCKDEF, we outline the top ten security risks commonly encountered in EVM-compatible decentralized applications (DApps). This guide provides critical insights into these vulnerabilities and offers practical advice for managing and mitigating risks to enhance the security of your applications.
 
-Best used for section headers.
+<img
+  className="block"
+  src="/images/top-ten-bg.svg"
+  alt="Hero Light"
+/>
 
-```md
-## Titles
+### About the Top Ten Vulnerabilities
+
+The BLOCKDEF Top Ten Vulnerabilities represent the most pressing security risks in EVM-compatible applications. These vulnerabilities have been identified based on common patterns observed in security audits, historical attack data, and expert analysis. Our goal is to help developers understand these risks and implement effective strategies to mitigate them, thereby improving the overall security of their smart contracts.
+
+### Motives for Identifying Top Vulnerabilities
+
+- **Enhancing Security**: By understanding and mitigating these common vulnerabilities, developers can significantly reduce the risk of security breaches and attacks on their DApps.
+- **Improving Best Practices**: Highlighting these vulnerabilities helps establish and reinforce best practices in EVM-compatible smart contract development.
+- **Promoting Awareness**: Raising awareness about these risks helps the broader developer community stay informed and proactive in securing their applications.
+- **Guiding Development**: Providing clear guidance on these risks supports developers in writing more secure and reliable code.
+
+### Selection and Updates
+
+The vulnerabilities included in our top ten list are selected based on:
+<CardGroup cols={2}>
+  <Card title="Incident Reports">
+    Analysis of recent security incidents and breaches in EVM-compatible applications.
+  </Card>
+  <Card title="Expert Inputs">
+    Insights from security researchers, auditors, and industry experts who specialize in EVM-compatible and blockchain security.
+  </Card>
+   <Card title="Historical Data">
+    Review of past vulnerabilities that have consistently impacted EVM-compatible applications.
+  </Card>
+  <Card title="Emerging Trends">
+    Identification of new and evolving threats in the EVM-compatible ecosystem.
+  </Card>
+</CardGroup>
+
+## Collaboration for Accurate Data
+
+This collaborative approach helps us maintain a well-rounded and current understanding of the security landscape, ensuring that our list reflects the most critical and up-to-date vulnerabilities.
+
+<CardGroup cols={2}>
+  <Card title="Protocols">
+     Working with different EVM-compatible protocols to gather data on vulnerabilities and common issues encountered across various platforms.
+  </Card>
+  <Card title="Audit Firms">
+    Partnering with leading security audit firms to review findings from comprehensive security audits and incorporate their expert assessments into our list.
+  </Card>
+</CardGroup>
+
+#### Annual Updates
+
+To ensure that our list remains relevant and useful, we update the top ten vulnerabilities annually. This process involves:
+- **Reviewing Recent Data**: Analyzing the latest security incidents and trends in EVM-compatible applications.
+- **Consulting Experts**: Gathering feedback from security experts and industry professionals to identify emerging vulnerabilities.
+- **Revising the List**: Updating the vulnerabilities based on new findings and shifting threat landscapes.
+
+Our commitment to providing current and actionable security information helps developers stay ahead of potential threats and maintain the security of their EVM-compatible applications.
+
+
+<Info>
+  **Prerequisite** You should have installed Node.js (version 18.10.0 or
+  higher).
+</Info>
+
+Step 1. Clone the BLOCKEF repository:
+
+<CodeGroup>
+
+```bash npm
+git clone https://github.com/blockdef/web3-top-ten-vulnerabilities.git
 ```
 
-### Subtitles
+</CodeGroup>
 
-Best use to subsection headers.
+Or using GitHub CLI:
 
-```md
-### Subtitles
+```bash
+gh repo clone blockdef/web3-top-ten-vulnerabilities
 ```
 
-<Tip>
 
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
+Step 2. Installing dependencies once in the project's root directory, run the following command to install the project's dependencies:
 
-</Tip>
-
-## Text Formatting
-
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
-
-| Style         | How to write it   | Result          |
-| ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
-
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
-
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
-
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
-
-## Linking to Pages
-
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
-
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
-
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
-
-## Blockquotes
-
-### Singleline
-
-To create a blockquote, add a `>` in front of a paragraph.
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
+```bash npm
+npm install
 ```
 
-### Multiline
+Step 3. After installing the dependencies once in the project's root directory, run the following command to start the project:
 
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```bash npm
+npm run dev
 ```
 
-### LaTeX
+### Custom Ports
 
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
+BLOCKDEF uses port 3000 by default. You can use the `--port` flag to customize the port the repository runs on.
 
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
 
-```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-```
+For additional resources and guidance, visit our [documentation](https://docs.blockdef.com) and participate in our [community forum](https://blockdef.dev/contribute).
+
+Stay secure!

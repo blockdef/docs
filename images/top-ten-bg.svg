@@ -1,0 +1,85 @@
+<svg width="700" height="320" viewBox="0 0 700 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define solid emerald background color -->
+    <linearGradient id="solid_background" x1="0" y1="0" x2="700" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50C878"/> <!-- Emerald color -->
+      <stop offset="1" stop-color="#50C878"/> <!-- Emerald color -->
+    </linearGradient>
+    
+    <!-- Grid line styles -->
+    <linearGradient id="grid_line_vertical" x1="0" y1="0" x2="0" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003366" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#003366" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="grid_line_horizontal" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003366" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#003366" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Define geometric shapes gradient -->
+    <linearGradient id="geo_shape_gradient" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#4D9F5F" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#007F6F" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Rectangle -->
+  <rect width="700" height="320" rx="16" fill="url(#solid_background)"/> <!-- Solid emerald background -->
+
+  <!-- Grid Lines -->
+  <g stroke="#003366" stroke-width="1" stroke-opacity="0.4">
+    <!-- Vertical lines -->
+    <line x1="16" y1="20" x2="16" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="56" y1="20" x2="56" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="96" y1="20" x2="96" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="136" y1="20" x2="136" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="176" y1="20" x2="176" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="216" y1="20" x2="216" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="256" y1="20" x2="256" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="296" y1="20" x2="296" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="336" y1="20" x2="336" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="376" y1="20" x2="376" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="416" y1="20" x2="416" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="456" y1="20" x2="456" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="496" y1="20" x2="496" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="536" y1="20" x2="536" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="576" y1="20" x2="576" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="616" y1="20" x2="616" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    <line x1="656" y1="20" x2="656" y2="320" stroke="url(#grid_line_vertical)" stroke-dasharray="4 4"/>
+    
+    <!-- Horizontal lines -->
+    <line x1="20" y1="16" x2="700" y2="16" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+    <line x1="20" y1="56" x2="700" y2="56" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+    <line x1="20" y1="96" x2="700" y2="96" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+    <line x1="20" y1="136" x2="700" y2="136" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+    <line x1="20" y1="176" x2="700" y2="176" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+    <line x1="20" y1="216" x2="700" y2="216" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+    <line x1="20" y1="256" x2="700" y2="256" stroke="url(#grid_line_horizontal)" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Simplified Blockchain-Themed Geometric Figures -->
+  <g stroke="black" stroke-width="2" fill="url(#geo_shape_gradient)" opacity="0.6">
+    <!-- Nodes -->
+    <circle cx="75" cy="150" r="20" />
+    <circle cx="140" cy="150" r="20" />
+    <circle cx="205" cy="150" r="20" />
+    <circle cx="270" cy="150" r="20" />
+    <circle cx="335" cy="150" r="20" />
+    <circle cx="400" cy="150" r="20" />
+    <circle cx="465" cy="150" r="20" />
+    <circle cx="530" cy="150" r="20" />
+    <circle cx="595" cy="150" r="20" />
+    <circle cx="660" cy="150" r="20" />
+    
+    <!-- Connections -->
+    <line x1="75" y1="150" x2="140" y2="150" />
+    <line x1="140" y1="150" x2="205" y2="150" />
+    <line x1="205" y1="150" x2="270" y2="150" />
+    <line x1="270" y1="150" x2="335" y2="150" />
+    <line x1="335" y1="150" x2="400" y2="150" />
+    <line x1="400" y1="150" x2="465" y2="150" />
+    <line x1="465" y1="150" x2="530" y2="150" />
+    <line x1="530" y1="150" x2="595" y2="150" />
+    <line x1="595" y1="150" x2="660" y2="150" />
+  </g>
+</svg>

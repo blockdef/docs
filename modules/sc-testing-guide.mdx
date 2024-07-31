@@ -1,37 +1,103 @@
 ---
 title: 'Smart Contract Testing Guide'
-description: 'Display inline code and code blocks'
+description: ''
 icon: 'code'
 ---
 
-## Basic
+Your Guide to fortified Smart Contract Development. Is your essential companion in the journey to creating resilient smart contracts. This guide provides actionable insights and practical strategies for testing and securing your smart contract code.
 
-### Inline Code
+<img
+  className="block"
+  src="/images/testing-guide-bg.svg"
+  alt="Hero Light"
+/>
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+### What is This Guide About?
 
+In the evolving landscape of blockchain and smart contract development, ensuring the security and correctness of your smart contracts is critical. This guide provides a comprehensive overview of:
+
+- **Testing Techniques**: Learn the best practices for testing smart contracts, including unit tests, integration tests, and property-based tests.
+- **Security Best Practices**: Understand key security principles and common vulnerabilities in smart contracts to prevent potential exploits.
+- **Tooling and Frameworks**: Discover the tools and frameworks available for effective smart contract testing, from testing libraries to static analysis tools.
+
+### Why Is This Guide Important?
+
+- **Fortify Your Code**: By following the practices outlined in this guide, you can significantly reduce the risk of vulnerabilities and ensure that your smart contracts behave as intended.
+- **Enhance Development Confidence**: Comprehensive testing leads to more reliable code, giving you and your stakeholders confidence in the functionality and security of your contracts.
+- **Stay Ahead of Threats**: Regular updates and insights keep you informed about emerging threats and best practices, helping you stay ahead in the fast-paced world of smart contract development.
+
+### Key Sections
+
+<AccordionGroup>
+  <Accordion title="Introduction to Smart Contract Testing">
+    Get started with foundational concepts and testing methodologies. This section covers the basics of smart contract testing and why it's critical for development.
+  </Accordion>
+  <Accordion title="Security Practices">
+    Learn how to identify and mitigate common vulnerabilities. This section provides strategies and best practices for securing your smart contracts against known and emerging threats.
+  </Accordion>
+  <Accordion title="Testing Tools and Frameworks">
+    Explore various tools and their use cases for effective testing. This section reviews popular testing libraries, frameworks, and static analysis tools that can assist in smart contract testing.
+  </Accordion>
+  <Accordion title="Advanced Testing Strategies">
+    Delve into more complex testing scenarios and strategies. This section covers advanced techniques for handling edge cases and ensuring robustness in your smart contracts.
+  </Accordion>
+</AccordionGroup>
+
+### How the Inputs Are Gathered
+
+This guide is built upon extensive collaboration and research. We gather inputs through:
+
+- **Collaboration with Protocols**: Partnering with leading blockchain protocols to understand the latest developments and challenges in smart contract security.
+- **Audit Firms**: Working with top audit firms to incorporate insights from comprehensive security audits and real-world vulnerability findings.
+- **Security Researchers**: Engaging with security researchers to stay abreast of new threats and evolving attack vectors.
+- **Universities**: Collaborating with academic institutions to integrate cutting-edge research and theoretical advancements into practical testing strategies.
+
+Explore each section to enhance your understanding and application of smart contract testing. Whether you are a beginner or an experienced developer, this guide aims to support you in building secure and resilient blockchain applications.
+
+---
+
+<Info>
+  **Prerequisite** You should have installed Node.js (version 18.10.0 or
+  higher).
+</Info>
+
+Step 1. Clone the BLOCKEF repository:
+
+<CodeGroup>
+
+```bash npm
+git clone https://github.com/blockdef/web3-security-testing-guide.git
 ```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+
+</CodeGroup>
+
+Or using GitHub CLI:
+
+```bash
+gh repo clone blockdef/web3-security-testing-guide
 ```
 
-### Code Block
 
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+Step 2. Installing dependencies once in the project's root directory, run the following command to install the project's dependencies:
 
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+```bash npm
+npm install
 ```
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+Step 3. After installing the dependencies once in the project's root directory, run the following command to start the project:
+
+```bash npm
+npm run dev
 ```
-````
+
+### Custom Ports
+
+BLOCKDEF uses port 3000 by default. You can use the `--port` flag to customize the port the repository runs on.
+
+
+For additional resources and guidance, visit our [documentation](https://docs.blockdef.com) and participate in our [community forum](https://blockdef.dev/contribute).
+
+--- 
+
+Stay secure!
+
