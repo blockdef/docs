@@ -22,8 +22,11 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://blockdef.dev"
+    "name": "BLOCKDEF",
+    "url": "https://blockdef.dev",
+    "arrow": false,
+    "type": "link",
+    "style": "roundedRectangle"
   },
   "tabs": [
     {
