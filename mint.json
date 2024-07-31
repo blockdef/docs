@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "BLOCKDEF",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "./logo/light.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@blockdef.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://blockdef.dev"
   },
   "tabs": [
     {
@@ -35,17 +35,17 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://blockdef.mintlify.app/introduction"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "telegram",
+      "url": "https://blockdef.dev/contribute"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://blockdef.dev/articles"
     }
   ],
   "navigation": [
@@ -58,14 +58,20 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Modules",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "modules/sc-top-ten-vulnerabilties",
+        "modules/sc-testing-guide",
+        "modules/sc-vulnerability-archieve",
+        "modules/kratos-toolsuite",
+        "modules/kratos-ia",
+        "modules/security-report",
+        "modules/research",
+        "modules/bootcamps",
+        "modules/cheatsheets",
+        "modules/newsletter",
+        "modules/community-projects",
+        "modules/analytics"
       ]
     },
     {
@@ -84,8 +90,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/blockdef",
+    "github": "https://github.com/blockdef",
+    "linkedin": "https://www.linkedin.com/company/blockdef"
   }
 }
