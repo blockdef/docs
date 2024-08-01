@@ -1,66 +1,54 @@
 ---
 title: 'Analytics and Data'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+description: ''
 icon: 'binary'
 ---
 
-The navigation menu is the list of links on every website.
+The Blockchain Data Dashboard offers an advanced platform for monitoring and analyzing blockchain metrics. It provides detailed insights and visualizations that help users keep track of crucial metrics such as transactions, smart contracts, network health, tokens, and security incidents. This module is designed to support informed decision-making and trend analysis, making it an essential tool for blockchain enthusiasts and professionals.
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+<img
+  className="block"
+  src="/images/analytics-data.svg"
+  alt="Hero Light"
+/>
 
-## Navigation syntax
+## Features
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+- **Comprehensive Metrics Tracking**: Monitor key blockchain metrics including transaction volumes, contract interactions, and network performance.
+- **Real-Time Visualizations**: Access live data visualizations for a clear and immediate understanding of blockchain activities.
+- **Historical Data Analysis**: Review historical data to identify trends and patterns over time.
+- **Customizable Dashboards**: Tailor dashboards to focus on specific metrics and visualizations that matter most to you.
+- **Alerts and Notifications**: Set up alerts for critical events or anomalies to stay informed about potential issues or significant changes.
 
-<CodeGroup>
+## Metrics
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
+The dashboard provides in-depth information on the following metrics:
 
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
+- **Transactions**: Number and volume of transactions on the blockchain.
+- **Smart Contracts**: Interactions and performance of deployed smart contracts.
+- **Network Health**: Key indicators of the blockchain's operational health, including node status and latency.
+- **Tokens**: Tracking of various tokens, including their volume and activity.
+- **Security Incidents**: Monitoring of potential security threats or incidents affecting the blockchain.
 
-</CodeGroup>
+## Visualizations
 
-## Folders
+The dashboard includes several types of visualizations to aid in understanding and analyzing data:
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+- **Charts**: Line charts, bar charts, and pie charts to represent various metrics.
+- **Graphs**: Network graphs to illustrate connections and interactions between nodes and contracts.
+- **Heatmaps**: Visual representations of activity intensity across different periods and regions.
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+## Use Cases
 
-<Warning>
+- **Network Monitoring**: Keep an eye on the health and performance of the blockchain network.
+- **Trend Analysis**: Analyze historical data to identify trends and make predictions.
+- **Performance Optimization**: Use insights to optimize smart contract performance and transaction efficiency.
+- **Incident Response**: Quickly respond to and investigate security incidents with real-time data and alerts.
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+## Support
 
-</Warning>
+For any questions or support, please reach out to our team or consult the [support documentation](#) for additional resources.
 
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
+---
 
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+Stay secure!

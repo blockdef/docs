@@ -1,110 +1,37 @@
 ---
 title: Newsletter
-description: Reusable, custom snippets to keep content in sync
+description: 
 icon: 'pen'
 ---
 
-import SnippetIntro from '/snippets/snippet-intro.mdx';
+Welcome to our weekly newsletter! Here, you'll find the latest updates, insights, and stories from our community. Stay informed about Ethereum development, security, upcoming events, and new resources to help you in your journey. 
 
-<SnippetIntro />
 
-## Creating a custom snippet
+<img
+  className="block"
+  src="/images/testing-guide-bg.svg"
+  alt="Hero Light"
+/>
 
-**Pre-condition**: You must create your snippet file in the `snippets` directory.
+### What's Inside
 
-<Note>
-  Any page in the `snippets` directory will be treated as a snippet and will not
-  be rendered into a standalone page. If you want to create a standalone page
-  from the snippet, import the snippet into another file and call it as a
-  component.
-</Note>
+- **Latest Updates**: Get the newest information about Ethereum, Solidity, and our programs.
+- **Featured Articles**: Dive into in-depth articles and tutorials on blockchain technology.
+- **Upcoming Events**: Discover webinars, workshops, and conferences.
+- **Community Spotlights**: Meet the people and projects making waves in the Ethereum ecosystem.
+- **Tips & Tricks**: Useful tips for developers and enthusiasts alike.
 
-### Default export
+### Stay Connected
 
-1. Add content to your snippet file that you want to re-use across multiple
-   locations. Optionally, you can add variables that can be filled in via props
-   when you import the snippet.
+Follow us on social media for real-time updates and join our community discussions:
 
-```mdx snippets/my-snippet.mdx
-Hello world! This is my content I want to reuse across pages. My keyword of the
-day is {word}.
-```
+- [Twitter](#)
+- [LinkedIn](#)
+- [Discord](#)
 
-<Warning>
-  The content that you want to reuse must be inside the `snippets` directory in
-  order for the import to work.
-</Warning>
+Thank you for subscribing to our newsletter. We’re excited to keep you updated with the latest in EVM related topics and blockchain technology. If you have any feedback or suggestions, feel free to reach out to us at [support@blockdef.com](mailto:support@blockdef.com).
 
-2. Import the snippet into your destination file.
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
 ---
 
-import MySnippet from '/snippets/path/to/my-snippet.mdx';
+For more information, visit our [website](#) or contact us directly. We look forward to bringing you more valuable content in the next issue!
 
-## Header
-
-Lorem impsum dolor sit amet.
-
-<MySnippet word="bananas" />
-```
-
-### Reusable variables
-
-1. Export a variable from your snippet file:
-
-```mdx snippets/path/to/custom-variables.mdx
-export const myName = 'my name';
-
-export const myObject = { fruit: 'strawberries' };
-```
-
-2. Import the snippet from your destination file and use the variable:
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { myName, myObject } from '/snippets/path/to/custom-variables.mdx';
-
-Hello, my name is {myName} and I like {myObject.fruit}.
-```
-
-### Reusable components
-
-1. Inside your snippet file, create a component that takes in props by exporting
-   your component in the form of an arrow function.
-
-```mdx snippets/custom-component.mdx
-export const MyComponent = ({ title }) => (
-  <div>
-    <h1>{title}</h1>
-    <p>... snippet content ...</p>
-  </div>
-);
-```
-
-<Warning>
-  MDX does not compile inside the body of an arrow function. Stick to HTML
-  syntax when you can or use a default export if you need to use MDX.
-</Warning>
-
-2. Import the snippet into your destination file and pass in the props
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { MyComponent } from '/snippets/custom-component.mdx';
-
-Lorem ipsum dolor sit amet.
-
-<MyComponent title={'Custom title'} />
-```

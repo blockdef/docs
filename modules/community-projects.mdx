@@ -1,59 +1,115 @@
 ---
 title: 'Community Projects'
-description: 'Add image, video, and other HTML elements'
+description: ''
 icon: 'users'
 ---
 
+Welcome to the BLOCKDEF Community Projects repository! This space is dedicated to accepting and showcasing community contributions related to security in blockchain and smart contract development. Whether you’re a seasoned security expert or a passionate newcomer, your insights and contributions are valuable to us.
+
+
 <img
   style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
+  src="/images/community-projects.svg"
 />
 
-## Image
+### About the Repository
 
-### Using Markdown
+The BLOCKDEF Community Projects repository is a collaborative platform where developers, researchers, and enthusiasts can contribute security-related content. Our goal is to create a comprehensive resource for understanding, addressing, and mitigating security risks in the blockchain ecosystem.
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+### How to Contribute
 
-```md
-![title](/path/image.jpg)
+Contributions to this repository can take many forms, including but not limited to:
+
+- **Security Audits**: Share detailed audits of smart contracts or blockchain applications.
+- **Vulnerability Reports**: Submit reports on discovered vulnerabilities and their mitigations.
+- **Research Papers**: Contribute research on security trends, threats, and defenses.
+- **Tutorials and Guides**: Provide educational content on best practices for secure development.
+- **Tool Recommendations**: Suggest tools and frameworks that enhance security.
+
+#### Getting Started
+
+<Info>
+  **Prerequisite** You should have installed Node.js (version 18.10.0 or
+  higher).
+</Info>
+
+Step 1. Clone the BLOCKEF repository:
+
+<CodeGroup>
+
+```bash npm
+git clone https://github.com/blockdef/community-projects.git
 ```
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+</CodeGroup>
 
-### Using Embeds
+Or using GitHub CLI:
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
-
-```html
-<img height="200" src="/path/image.jpg" />
+```bash
+gh repo clone blockdef/community-projects
 ```
 
-## Embeds and HTML elements
+Step 2. Installing dependencies once in the project's root directory, run the following command to install the project's dependencies:
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
-
-<br />
-
-<Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
-</Tip>
-
-### iFrames
-
-Loads another HTML page within the document. Most commonly used for embedding videos.
-
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
+```bash npm
+npm install
 ```
+
+Step 3. After installing the dependencies once in the project's root directory, run the following command to start the project:
+
+```bash npm
+npm run dev
+```
+
+### Custom Ports
+
+BLOCKDEF uses port 3000 by default. You can use the `--port` flag to customize the port the repository runs on.
+
+For additional resources and guidance, visit our [documentation](https://docs.blockdef.com) and participate in our [community forum](https://blockdef.dev/contribute).
+
+
+### Specific Guidelines
+
+1. **Content Quality**: Ensure that all contributions are accurate, well-researched, and relevant to security topics in the blockchain and Ethereum ecosystem.
+2. **Formatting**: Use clear headings, subheadings, and formatting to enhance readability. Follow Markdown or MDX syntax rules for structuring your content.
+3. **Code Examples**: Provide code examples where applicable. Ensure that all code is properly commented and tested.
+
+### Mandatory Fields in `.mdx` Files
+
+When submitting a new `.mdx` file, you must include the following metadata fields at the top of your document. These fields help us manage and categorize content effectively:
+
+```mdx
+---
+title: Chainlink Integration Guide
+date: 2024-05-28
+author: BLOCKDEF
+github: (github of your repo)
+slug: chainlink-integration
+headings (table of content):
+  - What 
+  - The-EVM-Security-Testing-Guide
+  - Purpose
+  - Design
+  - Analyze
+  - Fuzzing
+  - Deploy
+---
+
+The content of your project...
+```
+
+For general guidelines, please refer to our [Contribution Guidelines](#).
+
+### Contact Us
+
+If you have any questions or need assistance with your contributions, feel free to reach out to us at [support@blockdef.com](mailto:support@blockdef.com).
+
+Thank you for being a part of the BLOCKDEF community. Together, we can make blockchain technology safer and more robust for everyone!
+
+### Disclaimer
+
+The information provided in this archive is for educational purposes only. While we strive to ensure the accuracy of the content, we cannot guarantee that it is complete or error-free. Always conduct your own research and consult with security experts when dealing with smart contract vulnerabilities.
+
+---
+
+For more information and to explore other projects, visit our [website](#) or check out the main [repository](#).

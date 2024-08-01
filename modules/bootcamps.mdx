@@ -1,110 +1,42 @@
 ---
 title: Bootcamps
-description: Reusable, custom snippets to keep content in sync
+description: ''
 icon: 'school'
 ---
 
-import SnippetIntro from '/snippets/snippet-intro.mdx';
+Welcome to our Ethereum Bootcamp! This intensive 8-week program is designed to take you from a complete beginner to a proficient developer in building decentralized applications (dApps) using Solidity. Whether you're looking to start a career in blockchain technology or enhance your existing skills, this bootcamp will equip you with the knowledge and hands-on experience you need to succeed in the rapidly evolving world of Ethereum.
 
-<SnippetIntro />
+<img
+  className="block"
+  src="/images/cooming-soon.svg"
+  alt="Hero Light"
+/>
 
-## Creating a custom snippet
+### What You'll Learn
 
-**Pre-condition**: You must create your snippet file in the `snippets` directory.
+Our bootcamp covers all the essential aspects of Ethereum development, including:
 
-<Note>
-  Any page in the `snippets` directory will be treated as a snippet and will not
-  be rendered into a standalone page. If you want to create a standalone page
-  from the snippet, import the snippet into another file and call it as a
-  component.
-</Note>
+- **Introduction to Blockchain Technology**: Understand the fundamental concepts of blockchain, consensus mechanisms, and Ethereum's architecture.
+- **Solidity Programming**: Learn Solidity, the primary language for writing smart contracts on Ethereum. Master key concepts such as data types, functions, inheritance, and security practices.
+- **Developing dApps**: Build decentralized applications by integrating smart contracts with web interfaces using tools like Web3.js, Ethers.js, Viem.
+- **Smart Contract Security**: Discover best practices for ensuring the security of your smart contracts and learn to identify and mitigate common vulnerabilities.
+- **Testing and Deployment**: Gain hands-on experience with testing frameworks, deployment strategies, and continuous integration for smart contracts.
+- **Real-World Projects**: Work on practical projects that mirror real-world use cases, allowing you to apply what you've learned in a meaningful way.
 
-### Default export
+### Why Choose Our Bootcamp?
 
-1. Add content to your snippet file that you want to re-use across multiple
-   locations. Optionally, you can add variables that can be filled in via props
-   when you import the snippet.
+- **Expert Instructors**: Learn from industry professionals with extensive experience in Ethereum development.
+- **Hands-On Learning**: Gain practical experience through real-world projects and interactive lessons.
+- **Comprehensive Curriculum**: From basics to advanced topics, our bootcamp covers all aspects of Ethereum development.
+- **Supportive Community**: Join a network of fellow learners and industry professionals who can support and guide you throughout your journey.
 
-```mdx snippets/my-snippet.mdx
-Hello world! This is my content I want to reuse across pages. My keyword of the
-day is {word}.
-```
+### Enrollment Information
 
-<Warning>
-  The content that you want to reuse must be inside the `snippets` directory in
-  order for the import to work.
-</Warning>
+- **Duration**: 8 weeks
+- **Format**: Online, with live sessions and self-paced coursework.
+- **Prerequisites**: No prior experience required. Basic programming knowledge is helpful but not necessary.
+- **Fees**: Is totaly free!
 
-2. Import the snippet into your destination file.
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
 ---
 
-import MySnippet from '/snippets/path/to/my-snippet.mdx';
-
-## Header
-
-Lorem impsum dolor sit amet.
-
-<MySnippet word="bananas" />
-```
-
-### Reusable variables
-
-1. Export a variable from your snippet file:
-
-```mdx snippets/path/to/custom-variables.mdx
-export const myName = 'my name';
-
-export const myObject = { fruit: 'strawberries' };
-```
-
-2. Import the snippet from your destination file and use the variable:
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { myName, myObject } from '/snippets/path/to/custom-variables.mdx';
-
-Hello, my name is {myName} and I like {myObject.fruit}.
-```
-
-### Reusable components
-
-1. Inside your snippet file, create a component that takes in props by exporting
-   your component in the form of an arrow function.
-
-```mdx snippets/custom-component.mdx
-export const MyComponent = ({ title }) => (
-  <div>
-    <h1>{title}</h1>
-    <p>... snippet content ...</p>
-  </div>
-);
-```
-
-<Warning>
-  MDX does not compile inside the body of an arrow function. Stick to HTML
-  syntax when you can or use a default export if you need to use MDX.
-</Warning>
-
-2. Import the snippet into your destination file and pass in the props
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { MyComponent } from '/snippets/custom-component.mdx';
-
-Lorem ipsum dolor sit amet.
-
-<MyComponent title={'Custom title'} />
-```
+For more details, visit our [bootcamp page](#) or reach out to us at [support@blockdef.com](mailto:support@blockdef.com) with any questions.
