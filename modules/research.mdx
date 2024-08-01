@@ -1,110 +1,45 @@
 ---
 title: Research
-description: Reusable, custom snippets to keep content in sync
+description: ''
 icon: 'pencil'
 ---
 
-import SnippetIntro from '/snippets/snippet-intro.mdx';
+<img
+  className="block"
+  src="/images/research.svg"
+  alt="Hero Light"
+/>
 
-<SnippetIntro />
+Explore the latest insights and trends in blockchain technology. From in-depth analyses of emerging protocols to practical guides on smart contract development, our blog offers a wealth of valuable resources for both seasoned enthusiasts and newcomers alike.
 
-## Creating a custom snippet
+<AccordionGroup>
+  <Accordion title="Emerging Protocols">
+    Delve into the newest protocols making waves in the blockchain ecosystem. This section provides detailed analyses and evaluations of upcoming technologies that could reshape the landscape of decentralized systems.
+  </Accordion>
+  <Accordion title="Smart Contract Development Guides">
+    Discover practical guides and best practices for smart contract development. This section covers everything from writing secure smart contracts to optimizing their performance and ensuring they meet industry standards.
+  </Accordion>
+  <Accordion title="Blockchain Trends">
+    Stay updated with the latest trends and advancements in blockchain technology. This section provides insights into current developments, future predictions, and how they could impact various sectors.
+  </Accordion>
+  <Accordion title="In-Depth Analyses">
+    Read comprehensive analyses on various blockchain topics. This section includes deep dives into specific areas of interest, offering valuable perspectives and expert opinions on the state of blockchain technology.
+  </Accordion>
+</AccordionGroup>
 
-**Pre-condition**: You must create your snippet file in the `snippets` directory.
+## Examples
 
-<Note>
-  Any page in the `snippets` directory will be treated as a snippet and will not
-  be rendered into a standalone page. If you want to create a standalone page
-  from the snippet, import the snippet into another file and call it as a
-  component.
-</Note>
-
-### Default export
-
-1. Add content to your snippet file that you want to re-use across multiple
-   locations. Optionally, you can add variables that can be filled in via props
-   when you import the snippet.
-
-```mdx snippets/my-snippet.mdx
-Hello world! This is my content I want to reuse across pages. My keyword of the
-day is {word}.
-```
-
-<Warning>
-  The content that you want to reuse must be inside the `snippets` directory in
-  order for the import to work.
-</Warning>
-
-2. Import the snippet into your destination file.
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import MySnippet from '/snippets/path/to/my-snippet.mdx';
-
-## Header
-
-Lorem impsum dolor sit amet.
-
-<MySnippet word="bananas" />
-```
-
-### Reusable variables
-
-1. Export a variable from your snippet file:
-
-```mdx snippets/path/to/custom-variables.mdx
-export const myName = 'my name';
-
-export const myObject = { fruit: 'strawberries' };
-```
-
-2. Import the snippet from your destination file and use the variable:
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { myName, myObject } from '/snippets/path/to/custom-variables.mdx';
-
-Hello, my name is {myName} and I like {myObject.fruit}.
-```
-
-### Reusable components
-
-1. Inside your snippet file, create a component that takes in props by exporting
-   your component in the form of an arrow function.
-
-```mdx snippets/custom-component.mdx
-export const MyComponent = ({ title }) => (
-  <div>
-    <h1>{title}</h1>
-    <p>... snippet content ...</p>
-  </div>
-);
-```
-
-<Warning>
-  MDX does not compile inside the body of an arrow function. Stick to HTML
-  syntax when you can or use a default export if you need to use MDX.
-</Warning>
-
-2. Import the snippet into your destination file and pass in the props
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
----
-
-import { MyComponent } from '/snippets/custom-component.mdx';
-
-Lorem ipsum dolor sit amet.
-
-<MyComponent title={'Custom title'} />
-```
+<CardGroup cols={2}>
+  <Card title="Understanding Reentrancy Attacks">
+    Analyze the risks associated with reentrancy attacks on the EVM and explore strategies to defend against this prevalent threat.  
+  </Card>
+  <Card title="Smart Contract Security Essentials">
+    Learn essential practices for developing secure smart contracts on the EVM, including auditing and secure coding techniques.
+  </Card>
+   <Card title="Securing DeFi Protocols on the EVM">
+    Learn about the unique security challenges faced by DeFi protocols on the EVM and best practices for protecting user funds.
+  </Card>
+  <Card title="Defending Against Front-Running Attacks">
+    Explore strategies to mitigate the risks of front-running attacks in Ethereum.
+  </Card>
+</CardGroup>

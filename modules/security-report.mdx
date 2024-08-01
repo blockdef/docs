@@ -1,66 +1,69 @@
 ---
-title: 'Security Report'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+title: 'Smart Contract Security Reports'
+description: ''
 icon: 'book'
 ---
 
-The navigation menu is the list of links on every website.
+<img
+  className="block"
+  src="/images/sc-security-report.svg"
+  alt="Hero Light"
+/>
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+Smart Contract Security Reports are a comprehensive resource for anyone interested in the security of the Ethereum ecosystem. Our team of experts closely monitors the EVM for potential vulnerabilities and works tirelessly to identify and document them.
 
-## Navigation syntax
+By reading these reports, you will gain valuable insights into the current state of EVM security, learn about the latest threats, and discover best practices for mitigating risks. Whether you are a developer, a user, or simply someone who cares about the future of Ethereum, these reports are an essential read.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+## Purpose
 
-<CodeGroup>
+The purpose of the Smart Contract Security Reports is to:
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
+- **Identify Risks:** Detect and document potential vulnerabilities within Ethereum smart contracts.
+- **Educate:** Provide educational resources to help developers, users, and other stakeholders understand these vulnerabilities.
+- **Mitigate:** Offer best practices and mitigation strategies to enhance the security of smart contracts and related technologies.
 
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
+## Objectives
 
-</CodeGroup>
+Our main objectives with the Smart Contract Security Reports are:
 
-## Folders
+- **Comprehensive Coverage:** Ensure thorough examination and reporting on a wide range of smart contract vulnerabilities.
+- **Up-to-Date Information:** Keep the community informed with the latest findings and trends in smart contract security.
+- **Actionable Insights:** Provide actionable recommendations to help in securing smart contracts and related systems.
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+## About the Reports
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+The Smart Contract Security Reports include:
 
-<Warning>
+- **Detailed Analysis:** In-depth analysis of specific vulnerabilities observed in smart contracts.
+- **Case Studies:** Real-world examples illustrating how vulnerabilities were exploited and their impact.
+- **Mitigation Strategies:** Recommendations and strategies for addressing and mitigating identified risks.
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+## Examples of Use
 
-</Warning>
+The Smart Contract Security Reports can be used in various ways, including:
 
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
+<AccordionGroup>
+  <Accordion title="Introduction to Smart Contract Security Reports">
+    Discover the purpose and importance of smart contract security reports. This section introduces you to the fundamentals of Smart Contract security, highlighting the key objectives and scope of our reports.
+  </Accordion>
+  <Accordion title="Recent Vulnerabilities">
+    Stay updated with the latest vulnerabilities identified in the EVM. This section provides a detailed overview of recent security issues, including their impact and mitigation strategies.
+  </Accordion>
+  <Accordion title="Historical Vulnerabilities">
+    Review past vulnerabilities and learn from historical security issues. This section covers previously documented vulnerabilities, providing context and insights into their evolution and resolution.
+  </Accordion>
+  <Accordion title="Best Practices for Mitigation">
+    Learn best practices for securing your smart contracts against vulnerabilities. This section offers actionable advice on how to protect your contracts from known and emerging threats.
+  </Accordion>
+  <Accordion title="Reporting and Analysis Tools">
+    Explore tools and methodologies for reporting and analyzing smart contract vulnerabilities. This section reviews popular tools and frameworks that can assist in identifying and addressing security risks.
+  </Accordion>
+</AccordionGroup>
 
-## Hidden Pages
+## Get Started
 
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+To start exploring the Smart Contract Security Reports, check out the latest reports on our [website](#) and stay updated with the most recent findings in smart contract security.
+
+---
+
+**Stay Informed and Stay Secure with the Smart Contract Security Reports!**
